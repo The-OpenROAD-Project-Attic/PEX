@@ -11,16 +11,17 @@ Regression model-based on-chip parasitic extraction (PEX) at the post-route stag
 - Training data generation using Cadence Innovus
 - Regression model training 
 - Output files:
-	* config_file_{corner_type_min}.txt
-	* config_file_{corner_type_max}.txt
+	* config_file_{corner_name_min}.txt
+	* config_file_{corner_name_max}.txt
 
 The training data generation is a one-time step which involves running a
-calibration script followed by a training script. The output format can
+calibration script and a training script to train the data. The output format can
 be referred to the ./doc/config_file.txt  
 
 ## Getting Started
 ### Prerequisite
 - python 3.6
+- Cadence Innovus 17.1 or newer
 - pip 18.1
 - python3-venv
 
