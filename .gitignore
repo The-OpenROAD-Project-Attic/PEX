@@ -1,0 +1,13 @@
+work
+*.sw*
+*.log*
+.nfs*
+*.pyc
+__pycache__
+template_definition.json
+*.pwr.rpt
+output
+PEX
+*.sdc
+calibration_flow.tcl
+*.ece*

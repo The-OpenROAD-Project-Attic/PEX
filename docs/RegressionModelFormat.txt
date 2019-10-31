@@ -1,0 +1,44 @@
+// File storing regreesion model results
+// UMN VLSI CAD lab, 12 - 06 - 2018
+
+// Resistance
+// R stands for resistance model
+// M1 stands for metal 1
+// a_r1 and b_r1 are two parameters from regression model
+// Given a metal 1 segment of L (length), resistance will be a_r1 * L + b_r1
+
+R M1 a_r1 b_r1
+R M2 a_r2 b_r2 
+R M3 a_r3 b_r3
+
+// Capacitance to Ground
+// CG stands for capacitance to ground model
+// M1 stands for metal 1
+// a_cg1 and b_cg1 are two parameters from regression model
+// Given a metal 1 segment of L (length), its capacitance to 
+// ground will be a_cg1 * L + b_cg1
+
+CG M1 a_cg1 b_cg1
+CG M2 a_cg2 b_cg2 
+CG M3 a_cg3 b_cg3
+
+// Coupling Capacitance within same layer
+// CC stands for coupling capacitance model
+// M1 stands for metal layer 1
+// a_cc1, b_cc1, c_cc1 and d_cc1 are four coefficients from regression model
+// Given a metal 1 segment of L (overlapped length) with another neighbooring 
+// metal 1 of spacing of D, coupling capacitance in between will be 
+// a_cc1 / D + b_cc1 * L + c_cc1 (L/D) + d_cc1
+
+CC M1 a_cc1 b_cc1 c_cc1 d_cc1
+CC M2 a_cc2 b_cc2 c_cc2 d_cc1
+CC M3 a_cc3 b_cc3 c_cc3 d_cc1
+
+// Via Resistance (M1 to M2, M2 to M3, M3 to M4, etc., below only showing 3)
+// V stands for via resistance model
+// V12 stands for via that connects metal 1 and metal 2
+// a_v1 is the resistance value of specified via
+
+V12 a_v1
+V23 a_v2
+V34 a_v3
