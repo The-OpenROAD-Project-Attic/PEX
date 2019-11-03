@@ -26,4 +26,4 @@ To run the flow, In the terminal:
 make inference
 ```
   
-The output of the flow can be found in the output folder by the name of <design_name>.spef.
+The output of the flow can be found in the output directory by the name of <design_name>.spef.
