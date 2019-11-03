@@ -74,15 +74,6 @@ make clean
 make build
 ```
 
-## Usage
-**Training Flow**
-	* config_file_{corner_name_min}.txt
-	* config_file_{corner_name_max}.txt
-
-The training data generation is a one-time step which involves running a
-calibration script and a training script to train the data. The output format can
-be referred to the ./doc/config_file.txt  
-
 ## Getting Started
 ### Prerequisite
 - python 3.6
@@ -134,7 +125,3 @@ different license. The license can be found below:
 
 + [PEX](./LICENSE): Regression model-based on-chip parasitic extraction (PEX)
 + [NanGate 45nm Library](./kits/nangate45/LICENSE): open-source standard-cell library for testing and exploring EDA flows
-	* Point to the paths of the Tech LEF, Cell LEF, qrcTech files, PVT libraries, and
-		the user-defined environment file
-	* In the terminal:
- `make all`
