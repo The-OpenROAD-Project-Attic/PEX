@@ -9,15 +9,6 @@ stage. The tool comprises of two flows:
 + Inference Flow
 
 ## Calibration Flow:
-A one-time process, for a specific technology, that extracts the coefficients
-for resistance, capacitance, and coupling capacitance of various metal layers
-and via in the BEOL stack in the form of regression models and store the
-coefficients in a configuration file.
-
-# OpenROAD-PEX
-Regression model-based on-chip parasitic extraction (PEX) at the post-route stage
-
-## Calibration Flow:
 - Inputs:
 	* Technology LEF
 	* Cell LEF
@@ -44,7 +35,7 @@ design.
 	* Cell LEF
 	* PVT Libraries
     * User-defined environment file
-    * routed DEF
+    * **routed DEF**
 - Output files:
 	* {design_name}.spef 
 
@@ -53,12 +44,12 @@ The detailed information about the flow can be found
 
 ## Getting Started
 ### Prerequisite
-- Python 3.6
+- python 3.6
 - Cadence Innovus 17.1 or newer
 - pip 18.1
-- Python3-venv
+- python3-venv
 
-Additionally, please refer to [*requirements.txt*](requirements.txt) file in this repository. 
+Additionally, please refer to *requirements.txt* file in this repository. 
 The packages in requirements.txt will be installed in a virtual environment during build.
 
 ### 3-party Module
@@ -72,28 +63,6 @@ The packages in requirements.txt will be installed in a virtual environment duri
 cd PEX 
 make clean
 make build
-```
-
-## Getting Started
-### Prerequisite
-- python 3.6
-- Cadence Innovus 17.1 or newer
-- pip 18.1
-- python3-venv
-
-Additionally, please refer to *requirements.txt* file in this repository. 
-The packages in requirements.txt will be installed in a virtual environment during build.
-
-### Install on a bare-metal machine
-
-#### Clone repo and submodules
-`git clone --recursive https://github.com/GeraldoPradipta/OpenROAD-PEX`
-
-#### Install
-```
-cd OpenROAD-PEX 
-make clean
-source install.sh
 ```
 
 ## Usage
